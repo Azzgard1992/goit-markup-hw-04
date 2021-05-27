@@ -50,12 +50,13 @@ body {
 }
 
 /* Навигация */
+.page-heder {
+  border-bottom: 1px solid #ececec;
+}
 
 .page-heder .container {
   display: flex;
-  align-items: center;
-
-  border-bottom: 1px solid #ececec;
+  justify-content: space-between;
 }
 .main-nav {
   display: flex;
@@ -78,7 +79,6 @@ body {
 
 .site-nav {
   display: flex;
-  margin-right: 290px;
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -102,7 +102,8 @@ body {
   margin-left: 30px;
 }
 .info-nav .link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -147,6 +148,11 @@ body {
   background-size: cover;
   background-position: center;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   text-align: center;
 }
 .hero-title {
@@ -182,13 +188,10 @@ body {
   color: var(--black-color);
 }
 .hero-container {
-  padding: 200px 452px;
+  max-width: 696px;
 }
 
 /* Особенности */
-.features {
-  margin-top: 94px;
-}
 
 .visually-hidden {
   position: absolute;
@@ -252,6 +255,9 @@ body {
 }
 
 /* Примеры */
+.examples {
+  padding-top: 0;
+}
 
 .examples-list {
   display: flex;
@@ -273,11 +279,15 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .team-title {
   color: var(--secondary-text-color);
 
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -293,7 +303,7 @@ body {
 }
 .icon-list {
   display: flex;
-  margin: 0 32px 30px 32px;
+  justify-content: center;
 }
 .icon-list .item + .item {
   margin-left: 10px;
@@ -327,7 +337,10 @@ body {
   margin-left: 30px;
 }
 .clients-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 92px;
   color: var(--icon-color);
@@ -337,9 +350,6 @@ body {
 }
 
 .clients-icon {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
   fill: currentColor;
 }
 .clients-link:hover,
@@ -352,6 +362,8 @@ body {
 .page-footer {
   background-color: var(--bgc-hero);
   color: var(--white-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--white-color);
@@ -362,14 +374,11 @@ body {
   line-height: 1.19;
 
   display: inline-block;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .footer-list {
   font-style: normal;
   line-height: 1.71;
-
-  padding-bottom: 60px;
 }
 .footer-list li {
   margin-bottom: 9px;
@@ -385,13 +394,14 @@ body {
   color: var(--accent-color);
 }
 .social-link {
-  margin-top: 72px;
   margin-left: 70px;
 }
 .footer-box {
   display: flex;
 }
 .footer-title {
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
